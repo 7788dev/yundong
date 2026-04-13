@@ -7,3 +7,5 @@ coverage/
 .DS_Store
 Thumbs.db
 .worktrees/
+backend/prisma/*.db
+backend/prisma/*.db-journal
