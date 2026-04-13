@@ -1,6 +1,7 @@
-﻿import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { PoseAnalyzeResult, PoseProvider } from './pose.types';
 import { DisabledPoseProvider } from './providers/disabled.provider';
+import { MediaPipePoseProvider } from './providers/mediapipe.provider';
 import { MockPoseProvider } from './providers/mock.provider';
 
 @Injectable()
@@ -12,7 +13,9 @@ export class PoseService {
     this.provider =
       providerName === 'mock'
         ? new MockPoseProvider()
-        : new DisabledPoseProvider();
+        : providerName === 'mediapipe'
+          ? new MediaPipePoseProvider()
+          : new DisabledPoseProvider();
   }
 
   async status() {
