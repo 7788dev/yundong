@@ -624,7 +624,7 @@ it('submits assessment and navigates to result page', async () => {
 
 - [ ] **Step 2: 跑测试确认失败**
 
-Run: `pnpm --filter frontend test assessment.spec.ts`
+Run: `pnpm --filter pure-admin-thin test assessment.spec.ts`
 Expected: FAIL
 
 - [ ] **Step 3: 实现页面与 API 调用**
@@ -643,7 +643,7 @@ export const analyzeAssessment = (id: number) => http.post(`/assessments/${id}/a
 
 - [ ] **Step 4: 测试通过**
 
-Run: `pnpm --filter frontend test assessment.spec.ts`
+Run: `pnpm --filter pure-admin-thin test assessment.spec.ts`
 Expected: PASS
 
 - [ ] **Step 5: Commit**
@@ -677,7 +677,7 @@ it('admin can create question from form', async () => {
 
 - [ ] **Step 2: 跑测试确认失败**
 
-Run: `pnpm --filter frontend test questions.spec.ts`
+Run: `pnpm --filter pure-admin-thin test questions.spec.ts`
 Expected: FAIL
 
 - [ ] **Step 3: 实现管理端 CRUD 页面**
@@ -690,7 +690,7 @@ Expected: FAIL
 
 - [ ] **Step 4: 测试通过**
 
-Run: `pnpm --filter frontend test questions.spec.ts`
+Run: `pnpm --filter pure-admin-thin test questions.spec.ts`
 Expected: PASS
 
 - [ ] **Step 5: Commit**
@@ -738,8 +738,8 @@ Expected: FAIL
 Run:
 - `pnpm --filter backend test`
 - `pnpm --filter backend test:e2e`
-- `pnpm --filter frontend test`
-- `pnpm --filter frontend build`
+- `pnpm --filter pure-admin-thin test`
+- `pnpm --filter pure-admin-thin build`
 
 Expected: 全部 PASS
 
