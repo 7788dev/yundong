@@ -23,7 +23,7 @@ export default {
     }
   ],
   rules: {
-    "prettier/prettier": true,
+    "prettier/prettier": [true, { endOfLine: "auto" }],
     "selector-class-pattern": null,
     "no-descending-specificity": null,
     "scss/dollar-variable-pattern": null,

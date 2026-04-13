@@ -20,7 +20,7 @@
             "<style>.svgfont {display: inline-block;width: 1em;height: 1em;fill: currentColor;vertical-align: -0.1em;font-size:16px;}</style>"
           );
         } catch (t) {
-          if (typeof console !== 'undefined') console.log(t);
+          if (typeof console !== "undefined") console.log(t);
         }
       }
       ((n = function () {
