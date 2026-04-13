@@ -1,7 +1,3 @@
-frontend                                 |  WARN  The field "pnpm.allowedDeprecatedVersions" was found in C:\Users\Administrator\Desktop\健身运动康复\.worktrees\posture-mvp\frontend/package.json. This will not take effect. You should configure "pnpm.allowedDeprecatedVersions" at the root of the workspace instead.
-frontend                                 |  WARN  The field "pnpm.onlyBuiltDependencies" was found in C:\Users\Administrator\Desktop\健身运动康复\.worktrees\posture-mvp\frontend/package.json. This will not take effect. You should configure "pnpm.onlyBuiltDependencies" at the root of the workspace instead.
-frontend                                 |  WARN  The field "pnpm.ignoredBuiltDependencies" was found in C:\Users\Administrator\Desktop\健身运动康复\.worktrees\posture-mvp\frontend/package.json. This will not take effect. You should configure "pnpm.ignoredBuiltDependencies" at the root of the workspace instead.
-
 > backend@0.0.1 test:e2e C:\Users\Administrator\Desktop\健身运动康复\.worktrees\posture-mvp\backend
 > jest --config ./test/jest-e2e.json "app.e2e-spec.ts"
 
@@ -14,5 +10,5 @@ At E:\nvm4w\nodejs\pnpm.ps1:16 char:5
  
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        1.258 s, estimated 2 s
+Time:        1.262 s, estimated 2 s
 Ran all test suites matching app.e2e-spec.ts.

@@ -1,31 +1,22 @@
-frontend                                 | â€‰WARNâ€‰ The field "pnpm.allowedDeprecatedVersions" was found in C:\Users\Administrator\Desktop\å¥èº«è¿åŠ¨åº·å¤\.worktrees\posture-mvp\frontend/package.json. This will not take effect. You should configure "pnpm.allowedDeprecatedVersions" at the root of the workspace instead.
-frontend                                 | â€‰WARNâ€‰ The field "pnpm.onlyBuiltDependencies" was found in C:\Users\Administrator\Desktop\å¥èº«è¿åŠ¨åº·å¤\.worktrees\posture-mvp\frontend/package.json. This will not take effect. You should configure "pnpm.onlyBuiltDependencies" at the root of the workspace instead.
-frontend                                 | â€‰WARNâ€‰ The field "pnpm.ignoredBuiltDependencies" was found in C:\Users\Administrator\Desktop\å¥èº«è¿åŠ¨åº·å¤\.worktrees\posture-mvp\frontend/package.json. This will not take effect. You should configure "pnpm.ignoredBuiltDependencies" at the root of the workspace instead.
-
-> backend@0.0.1 test:e2e C:\Users\Administrator\Desktop\å¥èº«è¿åŠ¨åº·å¤\.worktrees\posture-mvp\backend
+> backend@0.0.1 test:e2e C:\Users\Administrator\Desktop\½¡ÉíÔË¶¯¿µ¸´\.worktrees\posture-mvp\backend
 > jest --config ./test/jest-e2e.json "app.e2e-spec.ts"
 
+C:\Users\Administrator\Desktop\½¡ÉíÔË¶¯¿µ¸´\.worktrees\posture-mvp\backend:
+ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL backend@0.0.1 test:e2e: `jest --config ./test/jest-e2e.json "app.e2e-spec.ts"`
+Exit status 1
 node.exe : FAIL test/app.e2e-spec.ts
 At E:\nvm4w\nodejs\pnpm.ps1:16 char:5
 +     & "$basedir/node$exe"  "$basedir/node_modules/corepack/dist/pnpm. ...
 +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: (FAIL test/app.e2e-spec.ts:String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
- 
-  â— Health (e2e) â€º /api/health (GET)
+
+  ¡ñ Health (e2e) ? /api/health (GET)
 
     expect(received).toBe(expected) // Object.is equality
 
     Expected: 200
     Received: 404
-
-      15 |   it('/api/health (GET)', async () => {
-      16 |     const res = await request(app.getHttpServer()).get('/api/health');
-    > 17 |     expect(res.status).toBe(200);
-         |                        ^
-      18 |     expect(res.body).toEqual({ ok: true });
-      19 |   });
-      20 |
 
       at Object.<anonymous> (app.e2e-spec.ts:17:24)
 
@@ -34,6 +25,3 @@ Tests:       1 failed, 1 total
 Snapshots:   0 total
 Time:        1.308 s
 Ran all test suites matching app.e2e-spec.ts.
-C:\Users\Administrator\Desktop\å¥èº«è¿åŠ¨åº·å¤\.worktrees\posture-mvp\backend:
-â€‰ERR_PNPM_RECURSIVE_RUN_FIRST_FAILâ€‰ backend@0.0.1 test:e2e: `jest --config ./test/jest-e2e.json "app.e2e-spec.ts"`
-Exit status 1
